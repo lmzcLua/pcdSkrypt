@@ -1,0 +1,3 @@
+--skopiujcie to poniżej i wklejcie do executora miłej zabawy.
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lmzcLua/lmzc__/refs/heads/main/pcd"))()
