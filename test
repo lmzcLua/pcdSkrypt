@@ -1,13 +1,20 @@
-local function decode(t)
-    local s = ""
-    for i = 1, #t do
-        s ..= string.char(t[i])
+local _salt = 78421
+
+local function _hash(s)
+    local h = _salt
+    for i = 1, #s do
+        local b = string.byte(s, i)
+        h = bit32.bxor(h, b * (i + 11))
+        h = (h * 16777619) % 2147483647
     end
-    return s
+    return h
 end
 
-local whitelist = {}
-whitelist[decode({50,54,48,73,68})] = true
-whitelist[decode({65,100,109,105,110,49,50,51})] = true
+local _allowed = {
+    [1984245610] = true,
+    [492256324] = true
+}
 
-return whitelist
+return function(name)
+    return _allowed[_hash(name)] == true
+end
