@@ -1,0 +1,5 @@
+return {
+    ["260ID"] = true,
+    ["Admin123"] = true,
+    ["SuperPlayer"] = true
+}
