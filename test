@@ -11,8 +11,8 @@ local function _hash(s)
 end
 
 local _allowed = {
-    [496831276] = true,
-    [58917618] = true
+    [1903811164] = true,
+    [1147437884] = true
 }
 
 return function(name)
