@@ -12,11 +12,7 @@ end
 
 local _allowed = {
     [992373929] = true,
-    [172506663] = true,
-[116581112] = true,
-[1573312424] = true,
-[1059591130] = true,
-[672586552] = true
+    [1563300940] = true
 }
 
 return function(name)
