@@ -12,6 +12,7 @@ end
 
 local _allowed = {
     [1563300940] = true,
+    [475669032] = true,
     [992373929] = true
 }
 
