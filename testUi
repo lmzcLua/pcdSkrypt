@@ -1983,7 +1983,6 @@ function DiscordLib:Window(text)
 
 		if img == "" then
 			Server.Text = string.sub(text, 1, 1)
-			Server.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		else
 			ServerIco.Image = img
 		end
@@ -2347,7 +2346,7 @@ function DiscordLib:Window(text)
 
 				CurrentValueFrame.Name = "CurrentValueFrame"
 				CurrentValueFrame.Parent = SliderFrame
-				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(218, 0, 0)
 				CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 0, 8)
 
 				CurrentValueFrameCorner.Name = "CurrentValueFrameCorner"
