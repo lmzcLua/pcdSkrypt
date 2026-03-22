@@ -1661,7 +1661,7 @@ function DiscordLib:Window(text)
 	function ServerHold:Server(text, img)
 		local fc = false
 		local currentchanneltoggled = ""
-		local Server = Instance.new("TextButton")
+		local Server = Instance.new("CanvasGroup")
 		local ServerBtnCorner = Instance.new("UICorner")
 		local ServerIco = Instance.new("ImageLabel")
 		local ServerWhiteFrame = Instance.new("Frame")
