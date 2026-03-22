@@ -1983,6 +1983,7 @@ function DiscordLib:Window(text)
 
 		if img == "" then
 			Server.Text = string.sub(text, 1, 1)
+			Server.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		else
 			ServerIco.Image = img
 		end
